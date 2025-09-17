@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Creative Portfolio</title>
+    <meta
+      name="description"
+      content="GitHub Pagesで公開するためのシンプルで洗練されたポートフォリオサイトの原型です。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container nav-wrapper">
+        <a class="site-logo" href="#top" aria-label="ホームに戻る">MyPortfolio</a>
+        <button class="nav-toggle" type="button" aria-controls="site-navigation" aria-expanded="false">
+          <span class="nav-toggle__line" aria-hidden="true"></span>
+          <span class="nav-toggle__line" aria-hidden="true"></span>
+          <span class="nav-toggle__line" aria-hidden="true"></span>
+          <span class="sr-only">メニューを開閉</span>
+        </button>
+        <nav id="site-navigation" class="site-nav" aria-label="メイン">
+          <ul class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#activities">活動</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="section section--accent">
+        <div class="container section__inner">
+          <header class="section__header">
+            <p class="section__eyebrow">About</p>
+            <h1 class="section__title">自己紹介</h1>
+          </header>
+          <div class="section__body section__body--split">
+            <figure class="about-media">
+              <img
+                class="about-media__image"
+                src="main/self_image.png"
+                width="640"
+                height="640"
+                alt="研究に取り組むポートレート"
+                loading="lazy"
+              />
+            </figure>
+            <div class="about-content">
+              <ul class="about-list">
+                <li>
+                  <h3>研究内容</h3>
+                  <p>
+                    私の研究テーマは、陽子の拡散力が高い金属材料を機械学習で探索・発見し、高品質で安価な水素電池を作ることです。本研究の課題は、1つの材料を作るのに1か月以上の時間がかかるため、少ない試行回数で良い材料の発見が求められている点と材料の作成に時間とコストがかかるため、データが少ない点です。学習データが非常に少ないという特殊な環境で機械学習を活かし、効率を最大限高めることを目標とし、日々研究に取り組んでいます。
+                  </p>
+                </li>
+                <li>
+                  <h3>好きなこと</h3>
+                  <p>ポーカー / ボードゲーム</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="timeline" class="section section--accent">
+        <div class="container section__inner">
+          <header class="section__header">
+            <p class="section__eyebrow">Timeline</p>
+            <h2 class="section__title">歩み</h2>
+          </header>
+          <div class="timeline">
+            <div class="timeline__item">
+              <div class="timeline__point"></div>
+              <div class="timeline__content">
+                <time class="timeline__time">2022〜2025年</time>
+                <h3>九州大学入学（化学や金属について学ぶ）</h3>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__point"></div>
+              <div class="timeline__content">
+                <time class="timeline__time">2025年3月</time>
+                <h3>機械学習に出会い、120人エントリーのコンペティション（aihack）でソロ4位を獲得。</h3>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__point"></div>
+              <div class="timeline__content">
+                <time class="timeline__time">2025年4月</time>
+                <h3>機械学習を活用して金属材料を探索する山崎研究室に配属</h3>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__point"></div>
+              <div class="timeline__content">
+                <time class="timeline__time">2025年6月</time>
+                <h3>signate SMBC Group GREEN×DATA Challenge 2025 for Recruiting にて、23位/ 1071人を獲得（学生9位）</h3>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__point"></div>
+              <div class="timeline__content">
+                <time class="timeline__time">2025年8月</time>
+                <h3>九州大学院院試に集中+合格</h3>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__point"></div>
+              <div class="timeline__content">
+                <time class="timeline__time">2025年9月</time>
+                <h3>gci summer 2025 修了</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container section__inner">
+          <header class="section__header">
+            <p class="section__eyebrow">Skills</p>
+            <h2 class="section__title">スキルセット</h2>
+            <p class="section__description">
+              設計から開発、改善までのフローを意識した構成になっています。実績紹介と合わせて読みやすく整理しました。
+            </p>
+          </header>
+          <ul class="skills-list">
+            <li class="skills-list__item">
+              <h3 class="skills-list__title">ほぼ毎日読み書きしている</h3>
+              <p class="skills-list__description">
+                Python<br />
+                （scikit-learn,NumPy,pandasなど。Pytorchは学習中）
+              </p>
+            </li>
+            <li class="skills-list__item">
+              <h3 class="skills-list__title">よく個人開発で使っている</h3>
+              <p class="skills-list__description">Git/GitHub<br />OpenAI API</p>
+            </li>
+            <li class="skills-list__item">
+              <h3 class="skills-list__title">一度、バイブコーディングを通じて、個人開発等で使ったことがある</h3>
+              <p class="skills-list__description">render / Docker / Flask / django</p>
+            </li>
+            <li class="skills-list__item">
+              <h3 class="skills-list__title">簡単なプログラムであれば読むことができる言語</h3>
+              <p class="skills-list__description">java / javascript / c / HTML / css</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="books" class="section section--books">
+        <div class="container section__inner">
+          <header class="section__header">
+            <p class="section__eyebrow">Books</p>
+            <h2 class="section__title">読んだ本</h2>
+          </header>
+          <ul class="books-list">
+            <li class="books-list__item">「Kaggleで勝つデータ分析の技術」</li>
+            <li class="books-list__item">「The Kaggle Book:データ分析競技実践ガイド&amp;精鋭31人インタビュー」</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="activities" class="section section--dark section--activities">
+        <div class="container section__inner">
+          <header class="section__header">
+            <p class="section__eyebrow">Activity</p>
+            <h2 class="section__title">活動</h2>
+          </header>
+          <ul class="activities-list">
+            <li class="activities-list__item">
+              <figure class="activities-list__media">
+                <img
+                  class="activities-list__image"
+                  src="main/boardgame.png"
+                  width="640"
+                  height="400"
+                  alt="カラフルなボードゲームのイメージ"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="activities-list__body">
+                <h3 class="activities-list__title">同人ボードゲーム</h3>
+                <div class="activities-list__highlight">
+                  <p class="activities-list__description">
+                    ボードゲーム制作の中心人物となり、企画・設計・販売をしました。3人の少人数チームでしたが、メンバーへのタスクの割り振り・マネジメント等を学び、現地でお客様相手に、スライドを使ってゲームの説明を行い、営業・販売する貴重な経験を得ました。
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container section__inner">
+          <header class="section__header">
+            <p class="section__eyebrow">Contact</p>
+            <h2 class="section__title">お問い合わせ</h2>
+            <p class="section__description">
+              プロジェクトのご相談やお仕事のご依頼など、お気軽にご連絡ください。GitHub Pages上でも動作するシンプルな問い合わせ導線です。
+            </p>
+          </header>
+          <div class="contact-card">
+            <p class="contact-card__lead">下記のメールアドレス、またはSNSからご連絡ください。</p>
+            <ul class="contact-card__list">
+              <li>
+                <span class="contact-card__label">Mail</span>
+                <a href="mailto:hello@example.com">hello@example.com</a>
+              </li>
+              <li>
+                <span class="contact-card__label">GitHub</span>
+                <a href="https://github.com/your-account" target="_blank" rel="noopener">github.com/your-account</a>
+              </li>
+              <li>
+                <span class="contact-card__label">Twitter</span>
+                <a href="https://twitter.com/your-account" target="_blank" rel="noopener">@your-account</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p class="site-footer__copy">© 2024 MyPortfolio. All rights reserved.</p>
+        <a class="site-footer__policy" href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <button class="to-top" type="button" aria-label="ページトップへ">
+      <span aria-hidden="true">▲</span>
+    </button>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
