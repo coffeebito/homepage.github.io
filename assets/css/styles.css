@@ -163,6 +163,53 @@ h6 {
   position: relative;
   z-index: 1100;
 }
+.nav-close {
+  display: none;
+  position: absolute;
+  z-index: 1300;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid rgba(248, 250, 252, 0.35);
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.45);
+  cursor: pointer;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-close:focus-visible {
+  outline: 2px solid #f8fafc;
+  outline-offset: 3px;
+}
+
+.nav-close__line {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 65%;
+  height: 2px;
+  background: #f8fafc;
+  border-radius: 999px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-close__line:first-of-type {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.nav-close__line:nth-of-type(2) {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.nav-close:hover,
+.nav-close:focus-visible {
+  background: rgba(248, 250, 252, 0.15);
+  border-color: rgba(248, 250, 252, 0.55);
+}
 
 .nav-toggle__line {
   display: block;
@@ -371,6 +418,10 @@ h6 {
 
 .section--dark .section__eyebrow {
   color: var(--primary-light);
+}
+
+.section--dark .section__title {
+  color: rgba(248, 250, 252, 0.95);
 }
 
 .section__title {
@@ -802,11 +853,21 @@ h6 {
     display: block;
   }
 
+  .nav-close {
+    display: flex;
+  }
+
+  .is-locked .nav-toggle {
+    opacity: 0;
+    pointer-events: none;
+  }
+
   .site-nav {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1200;
     background: rgba(15, 23, 42, 0.86);
     padding: 4.5rem 1.5rem 2rem;
     flex-direction: column;
