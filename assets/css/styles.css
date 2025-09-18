@@ -393,6 +393,9 @@ h6 {
   box-shadow: var(--shadow);
   background: linear-gradient(135deg, rgba(108, 99, 255, 0.12), rgba(15, 23, 42, 0.08));
   aspect-ratio: 4 / 3;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
 }
 
 .about-media__image {
@@ -400,6 +403,11 @@ h6 {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.about-media__art {
+  width: 100%;
+  height: auto;
 }
 
 .about-content {
@@ -489,6 +497,9 @@ h6 {
   box-shadow: 0 18px 35px rgba(15, 23, 42, 0.35);
   background: linear-gradient(135deg, rgba(148, 163, 184, 0.35), rgba(37, 99, 235, 0.15));
   aspect-ratio: 16 / 10;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
 }
 
 .activities-list__image {
@@ -496,6 +507,11 @@ h6 {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.activities-list__art {
+  width: 100%;
+  height: auto;
 }
 
 .activities-list__body {
