@@ -69,6 +69,7 @@ h6 {
 .container {
   width: var(--container-width);
   margin-inline: auto;
+  padding-inline: clamp(1rem, 4vw, 2.5rem);
 }
 
 .sr-only {
@@ -159,6 +160,8 @@ h6 {
   border: none;
   padding: 0.25rem;
   cursor: pointer;
+  position: relative;
+  z-index: 1100;
 }
 
 .nav-toggle__line {
@@ -622,6 +625,10 @@ h6 {
   gap: 1.5rem;
 }
 
+.contact-card__list a {
+  word-break: break-word;
+}
+
 .contact-card__label {
   display: inline-block;
   font-size: 0.85rem;
@@ -706,6 +713,86 @@ h6 {
 
 }
 
+@media (max-width: 640px) {
+  .section {
+    padding-block: 3.75rem;
+  }
+
+  .section__inner {
+    gap: 1.75rem;
+  }
+
+  .section__header {
+    text-align: left;
+    margin-inline: 0;
+  }
+
+  .section__title {
+    margin-bottom: 0.75rem;
+  }
+
+  .section__description {
+    font-size: 1rem;
+  }
+
+  .about-list li {
+    padding: 1.25rem;
+  }
+
+  .skills-list {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .skills-list__item {
+    padding: 1.4rem 1.5rem;
+  }
+
+  .books-list__item {
+    text-align: left;
+  }
+
+  .timeline {
+    border-left: none;
+    padding-left: 0;
+    gap: 1.25rem;
+  }
+
+  .timeline__item {
+    padding: 1.4rem 1.5rem;
+    border-radius: var(--radius-medium);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: var(--shadow);
+    background: rgba(255, 255, 255, 0.96);
+  }
+
+  .timeline__point {
+    display: none;
+  }
+
+  .timeline__time {
+    display: block;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.12em;
+  }
+
+  .activities-list__item {
+    padding: 1.5rem;
+  }
+
+  .activities-list__highlight {
+    padding: 1.25rem;
+  }
+
+  .contact-card {
+    padding: 1.75rem;
+  }
+
+  .contact-card__list {
+    gap: 1.25rem;
+  }
+}
+
 @media (max-width: 760px) {
   .nav-toggle {
     display: block;
@@ -720,11 +807,15 @@ h6 {
     align-items: center;
     gap: 1.8rem;
     transform: translateY(-100%);
-    transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
   }
 
   .site-nav.is-open {
     transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
   }
 
   .nav-list {
