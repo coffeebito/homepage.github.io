@@ -1,2 +1,2 @@
 # Ignore binary assets supplied locally for preview
-main/*.png
+#main/*.png
